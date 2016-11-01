@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "englishvocabularyquiz",
+  "private_key_id": "725f9ce0b295339bb27fab3d4d7b840cd06fe701",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCyslZy1hySiW6r\nFILTzX1v0/AmFApEs3QKPFKHQizgrTZhxHEn9YtxHEbwj+74rjeoBL6ufOzAkcBd\nFeEgQe0vS6xPsbtjWx8gL6NQdF3XYPHlRaUKs0tVeNacMXJ0DBTyTE7KyuGGq2zy\nR+c62AmxwC4YARfahHNVDuWqxKkvd1zqFNcjkxCWpF/Mq/boxK0hUiq4SNFOPYCW\nM6+cXU35WFV3i2M2+/wCED+pIHREZgoA8H26X6sG5UH0W+XagQrPsnycJ0m8725G\nII6UeK72+A3xcFPQmP9VO2WNeoqn1bvr8nBBNe1hqEm9yrP7zMADa53nnzEFvv45\n8mO2OHKvAgMBAAECggEAY1krHuVTNVUbJhpdMgxI9OdL2J/DpbZviVFIQNLVyIQE\nfA6PKrwlLlmeRxh+r9uMLemVacUii119KUOEyj5c87KKtjQGDpMWlvplPdG0ao4H\nboRt4akU9QwdpPEIxOQCsUMjezOYdxrPk1POhrSdjylddxMEhASnal7B6VM1DKHO\nPb2ZYOHoXN2ClTKa56082dSE06TsU1osW1SueE6GURisQtwCmvPsHaVPd2QINbQu\nf21+OBlc0NKAFcw7QKbe2AGkhMyYkGnMru+m7DpxnnRqcw+AKBW8EVYzpLeWpUlg\nMufBBQNUneDFiHs7M4N+TuP0NdAEoLJN7C7aqOX0IQKBgQDXVMf12ZM5iv9M2hXF\nXF0enZSwNUDUVTiFhbp6ZubjFM01i/1G76gbA/tpIUNN6a85MWcihVWhlgyKwuUx\nDtD5DziKL92KvfjKz+PArUeCrt9buLlbok0ndTGPA4OvhYhWZBI8c68YtVMlHuth\nIq6Op0pn/eTSUBXvwPEPlegiMwKBgQDUckike4YVnSBe1nI4OKAR/fSECbjDVE/h\nT3m6qwsDcb7TnvEGyUqOC97XnzGa+VvelZ0224CoYdDP3dLhVZuOkeeMlbSk9ui4\nJCvYMKWCx5chSuJlT9bYTaDcyR6ZgTzcaLVtsRxq0yJyi1zd40XOh3p5tzkvviCQ\nk7oJZjRJlQKBgH8RptZryLeCUNn3MDXBJap1b1L0egdTKwGQQtUMeF+03MwmihYc\nQuV+WhRV7rPBnQdxId17NWcfdtND46ApkCQJWWIikOfY50I3n70KBFMYAvLLdYaf\npkwMmmw8tK8Va7kfYKuP0NoR1rjnIBu4La49BmmLqEZ7wBY1k4uQ+OWFAoGBAMyQ\n50YK84fobv0jPYTJcckhYsupmNHtY6WvI6YNgWNlqbyYdbp1JWc2IvQ5hEiYCFCC\nfIoQPwjkd29RR/hWuJ1F/VKv7OxUHK8DlXxtC1Ks4efa9blccaKCzX0L5H0npvUN\nlnXzb0ul1qu5akj2yYcfiV2egmBokW7l8OOQGJUpAoGBAIdyyhmePoPKceaMOz1i\n+gD9ywNL0P+ETlJoreL9bWlCKgNoheD/WhNhYIWmslrjzFuG0QPhwtQIttTGdWBy\nlmYhi+0SvCUgFlN4ECq0Km4M92evPhn9y15q9g+MacaXbJp0Nskpn9/24NeNJw0P\nlkRy4RkCjSmLYyD9RZNpq+1Z\n-----END PRIVATE KEY-----\n",
+  "client_email": "php-550@englishvocabularyquiz.iam.gserviceaccount.com",
+  "client_id": "100819877179925855966",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/php-550%40englishvocabularyquiz.iam.gserviceaccount.com"
+}
