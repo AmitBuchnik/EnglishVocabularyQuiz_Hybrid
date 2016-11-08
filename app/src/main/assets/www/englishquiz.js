@@ -3,6 +3,7 @@
  */
 
 var Quiz = {};
+Quiz.interval = 0;
 
 $(document).ready(function () {
     $('#btnStart').on('click', Quiz.getQuestions);
@@ -136,13 +137,13 @@ Quiz.startTimer = function (duration, display) {
             // example 05:00 not 04:59
             // start = Date.now() + 1000;
 
-            clearInterval(interval);
+            clearInterval(Quiz.interval);
             Quiz.finish();
         }
     };
     // we don't want to wait a full second before the timer starts
     timer();
-    let interval = setInterval(timer, 1000);
+    Quiz.interval = setInterval(timer, 1000);
 
     /*var timer = duration, minutes, seconds;
     setInterval(function () {
@@ -158,6 +159,10 @@ Quiz.startTimer = function (duration, display) {
             timer = duration;
         }
     }, 1000);*/
+};
+
+Quiz.stopTimer = function () {
+    clearInterval(Quiz.interval);
 };
 
 Quiz.addUserAnswer = function () {
@@ -217,6 +222,7 @@ Quiz.finish = function () {
     });
 
     //$('#qIntro').show();
+    Quiz.stopTimer();
     $('#btnStart').html('New Quiz').show();
     $('#qusetionsContainer').hide();
     $("#score").html(userScore);
