@@ -3,7 +3,6 @@
  */
 
 var Quiz = {};
-Quiz.interval = 0;
 
 $(document).ready(function () {
     $('#btnStart').on('click', Quiz.getQuestions);
@@ -39,7 +38,7 @@ Quiz.index = 0;
 
 Quiz.getQuestions = function () {
     $.ajax({
-        /*url: 'data.php',
+        url: 'data.php',
         dataType: 'json',
         success: function (data, status, xhr) {
             console.log(status);
@@ -75,9 +74,9 @@ Quiz.getQuestions = function () {
         },
         error: function (xhr, status, error) {
             console.log(status + " " + error);
-        }*/
+        }
 
-        url: './englishQuizData.json',
+        /*url: './englishQuizData.json',
         dataType: 'json',
         success: function (data, status) {
             console.log(status);
@@ -108,7 +107,7 @@ Quiz.getQuestions = function () {
         },
         error: function (xhr, status, error) {
             console.log(status + " " + error);
-        }
+        }*/
     });
 
     let fiveMinutes = 60 * 5, display = $('#qTimer');
@@ -137,13 +136,13 @@ Quiz.startTimer = function (duration, display) {
             // example 05:00 not 04:59
             // start = Date.now() + 1000;
 
-            clearInterval(Quiz.interval);
+            clearInterval(interval);
             Quiz.finish();
         }
     };
     // we don't want to wait a full second before the timer starts
     timer();
-    Quiz.interval = setInterval(timer, 1000);
+    let interval = setInterval(timer, 1000);
 
     /*var timer = duration, minutes, seconds;
     setInterval(function () {
@@ -161,10 +160,6 @@ Quiz.startTimer = function (duration, display) {
     }, 1000);*/
 };
 
-Quiz.stopTimer = function () {
-    clearInterval(Quiz.interval);
-};
-
 Quiz.addUserAnswer = function () {
     let answer = $('input[name=answer]:checked', '#rbAnswers').val();
     Quiz.answers.set(Quiz.questions[Quiz.index].question, answer);
@@ -174,6 +169,11 @@ Quiz.questionToScreen = function () {
     $('input[name=answer]:checked').removeAttr('checked'); // uncheck all radio for the new question
     $("input[name=answer]").checkboxradio('refresh');
     Quiz.questions[Quiz.index].toScreen();
+
+    let answer = Quiz.answers.get(Quiz.questions[Quiz.index].question);
+    $("input[name=answer][value='" + answer + "']").prop("checked",true);
+    $("input[name=answer]").checkboxradio('refresh');
+
     $('#qCounter').text((Quiz.index + 1) + " / " + Quiz.totalQuestions);
 
     if(Quiz.index == Quiz.questions.length - 1) {
@@ -222,7 +222,6 @@ Quiz.finish = function () {
     });
 
     //$('#qIntro').show();
-    Quiz.stopTimer();
     $('#btnStart').html('New Quiz').show();
     $('#qusetionsContainer').hide();
     $("#score").html(userScore);
